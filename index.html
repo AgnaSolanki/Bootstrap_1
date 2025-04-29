@@ -11,16 +11,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Latest Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3 Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/ccd9f8e8be.js"
       crossorigin="anonymous"
@@ -31,10 +30,10 @@
       <!-- Top Header (Contact + Social Media) -->
       <nav class="navbar navbar-expand-sm bg-light small py-2">
         <div
-          class="container d-flex justify-content-between align-items-center"
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
         >
           <!-- Contact Info -->
-          <ul class="navbar-nav flex-row">
+          <ul class="navbar-nav flex-column flex-sm-row mb-2 mb-md-0">
             <li class="nav-item me-3">
               <a class="nav-link text-secondary p-0" href="#"
                 ><i class="fa-solid fa-phone me-1"></i> (+88) 888 123 789</a
@@ -113,16 +112,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Navbar links -->
+          <!-- Collapsible content -->
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
             <ul class="navbar-nav align-items-center">
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#page">Pages</a>
@@ -150,7 +147,7 @@
 
     <div id="demo home" class="carousel slide" data-bs-ride="carousel">
       <!-- Indicators/dots -->
-      <div class="carousel-indicators text-white">
+      <div class="carousel-indicators text-dark">
         <button
           type="button"
           data-bs-target="#demo"
@@ -175,7 +172,7 @@
           <img
             src="https://as2.ftcdn.net/jpg/04/65/71/69/1000_F_465716913_N4CLR7etojguBe4M5bfGH6oNrnfJgrHn.jpg"
             alt="Los Angeles"
-            class="d-block"
+            class="d-block img-fluid"
             style="width: 100%"
           />
           <div class="carousel-caption">
@@ -245,32 +242,33 @@
       <!-- //services -->
       <h1 class="text-uppercase heading">Our Services</h1>
 
-      <ul class="nav services pt-5">
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fas fa-ruler-combined"></i></a
-          ><span> Design</span>
+      <ul class="row services pt-5 justify-content-center">
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fas fa-ruler-combined"></i></a>
+          <span>Design</span>
         </li>
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fa-solid fa-hammer"></i></a
-          ><span>Electric</span>
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fa-solid fa-hammer"></i></a>
+          <span>Electric</span>
         </li>
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fas fa-truck"></i> </a
-          ><span>Transport</span>
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fas fa-truck"></i></a>
+          <span>Transport</span>
         </li>
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fas fa-faucet-drip"></i> </a>
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fas fa-faucet-drip"></i></a>
           <span>Water</span>
         </li>
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fas fa-hard-hat"></i> </a
-          ><span>Building</span>
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fas fa-hard-hat"></i></a>
+          <span>Building</span>
         </li>
-        <li class="nav-item link">
-          <a class="nav-link" href="#"><i class="fas fa-building"></i> </a
-          ><span>Infrastructure</span>
+        <li class="col-6 col-md-4 col-lg-2 nav-item link text-center mb-4">
+          <a class="nav-link" href="#"><i class="fas fa-building"></i></a>
+          <span>Infrastructure</span>
         </li>
       </ul>
+
       <hr />
     </div>
     <div class="container">
@@ -303,7 +301,7 @@
             </h2>
             <div class="props p-3">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12 col-sm-6">
                   <div
                     class="d-flex justify-content-between align-items-center choice"
                   >
@@ -318,9 +316,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12 col-sm-6">
                   <div
-                    class="d-flex justify-content-between align-items-center choice"
+                    class="d-flex justify-content-center align-items-center choice"
                   >
                     <i class="fas fa-cogs"></i>
 
@@ -333,7 +331,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12 col-md-6 col-sm-6">
                   <div
                     class="d-flex justify-content-between align-items-center choice"
                   >
@@ -352,11 +350,11 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-6 col-md-6 col-sm-6">
             <img
               src="./Screenshot 2025-04-28 161815.png"
               alt="..."
-              class="img-fluid"
+              class="img-fluid image-photo"
             />
           </div>
         </div>
@@ -384,8 +382,8 @@
           </li>
         </ul>
       </nav>
-      <div class="row">
-        <div class="col-md-3 img-container px-0">
+      <div class="row mx-5">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -397,7 +395,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -409,7 +407,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -421,7 +419,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -434,8 +432,8 @@
           />
         </div>
       </div>
-      <div class="row pb-3">
-        <div class="col-md-3 img-container px-0">
+      <div class="row pb-3 mx-5">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -447,7 +445,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -459,7 +457,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -471,7 +469,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-md-3 img-container px-0">
+        <div class="col-md-3 col-sm-6 col-xs-12 img-container px-0">
           <div class="hover overlay text-center text-white pt-5">
             <h3 class="text-uppercase">Project Name</h3>
             <p class="text-light">Lorem ipsum dolor sit amet</p>
@@ -574,7 +572,9 @@
       </div>
     </div>
     <div class="conteiner-fluid project p-5" id="shop">
-      <div class="content text-start text-white">
+      <div
+        class="content text-start text-white d-flex flex-column justify-content-center align-items-start"
+      >
         <h1 class="text-uppercase">We build your dream project</h1>
         <p class="text-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -591,11 +591,11 @@
           <h2 class="text-uppercase text-start heading2 mb-3">Testimonials</h2>
           <ul class="pagination m-3 justify-content-end">
             <li class="page-item">
-              <a class="page-link" href="javascript:void(0);"><</a>
+              <a class="page-link" href="javascript:void(0);">&lt;</a>
             </li>
 
             <li class="page-item">
-              <a class="page-link" href="javascript:void(0);">></a>
+              <a class="page-link" href="javascript:void(0);">&gt;</a>
             </li>
           </ul>
         </div>
@@ -654,46 +654,61 @@
           <h2 class="text-uppercase text-start heading2 mb-3">Partner</h2>
           <ul class="pagination m-3 justify-content-end">
             <li class="page-item">
-              <a class="page-link" href="javascript:void(0);"><</a>
+              <a class="page-link" href="javascript:void(0);">&lt;</a>
             </li>
 
             <li class="page-item">
-              <a class="page-link" href="javascript:void(0);">></a>
+              <a class="page-link" href="javascript:void(0);">&gt;</a>
             </li>
           </ul>
         </div>
-        <ul class="nav services1 pt-5">
-          <li class="nav-item link">
+        <ul
+          class="row nav services1 pt-5 mx-auto d-flex justify-content-center"
+        >
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
-          <li class="nav-item link">
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
-          <li class="nav-item link">
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-person-shelter"></i>
-            </a>
-          </li>
-          <li class="nav-item link">
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
-          <li class="nav-item link">
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
-          <li class="nav-item link">
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <li
+            class="col-6 col-sm-4 col-md-4 col-lg-2 nav-item link text-center d-flex align-items-center justify-content-around partner"
+          >
             <a class="nav-link" href="#"
               ><i class="fa-solid fa-person-shelter"></i
             ></a>
           </li>
         </ul>
+
         <hr />
       </div>
     </div>
@@ -703,68 +718,78 @@
           <!-- Logo and About -->
           <div class="col-md-6 col-lg-3">
             <h2 class="text-uppercase text-warning mb-3">Visla</h2>
-            <p class="text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-              saepe sit magni voluptatum inventore corrupti quia delectus quam
-              provident velit maiores rerum temporibus, quasi alias et
-              repudiandae, deleniti fugiat fuga.
-            </p>
+            <div>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                saepe sit magni voluptatum inventore corrupti quia delectus
+              </p>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                saepe sit magni voluptatum inventore corrupti quia delectus
+              </p>
+            </div>
           </div>
 
           <!-- Navigation Links -->
           <div class="col-md-6 col-lg-3">
-            <h5 class="text-uppercase text-light mb-3">Navigation</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Blog</a>
-              </li>
-            </ul>
+            <h5 class="text-uppercase text-light mb-3 ml-3">Navigation</h5>
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#"
+                      >New Latest</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#partner"
+                      >Our Partner</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 text-secondary" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <!-- Working Hours -->
           <div class="col-md-6 col-lg-3">
             <h5 class="text-uppercase text-light mb-3">Working Hours</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#"
-                  >Monday - Friday</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#"
-                  >9:00 am - 5:00 pm</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Saturday</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#"
-                  >10:00 am - 2:00 pm</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Sunday</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-0 text-secondary" href="#">Closed</a>
-              </li>
-            </ul>
+            <p class="text-secondary">
+              Our support available to help you 24hours a day, seven day a week
+            </p>
+            <p class="text-secondary">
+              Working Days:Mon-fri <br />
+              Working Hours: 9:00 AM - 6:00 PM <br />
+              Support: 24/7 <br />
+            </p>
           </div>
 
           <!-- Subscribe Form -->
@@ -772,9 +797,7 @@
             <h5 class="text-uppercase text-light mb-3">Subscribe</h5>
             <p class="text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-              saepe sit magni voluptatum inventore corrupti quia delectus quam
-              provident velit maiores rerum temporibus, quasi alias et
-              repudiandae, deleniti fugiat fuga.
+              saepe sit magni voluptatum inventore corrupti quia
             </p>
             <form class="d-flex">
               <input
@@ -791,7 +814,7 @@
 
     <div class="container-fluid bg-dark text-light">
       <div class="container text-center py-3">
-        <p>Copyright &copy; 2023 Visla. All rights reserved.</p>
+        <p>Copyright &copy; 2027 Visla. All rights reserved.</p>
       </div>
     </div>
   </body>

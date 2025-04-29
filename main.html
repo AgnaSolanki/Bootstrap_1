@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visla</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ccd9f8e8be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container-fluid p-0">
+      <!-- Top Header (Contact + Social Media) -->
+      <nav class="navbar navbar-expand-sm bg-light small py-2">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <!-- Contact Info -->
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item me-3">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-solid fa-phone me-1"></i> (+88) 888 123 789</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-solid fa-envelope me-1"></i> contact@gmail.com</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-solid fa-location-dot me-1"></i> 193 Road
+                Glasgow</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social Icons -->
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-vimeo-v"></i
+              ></a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary p-0" href="#"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Navigation -->
+      <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand text-warning fw-bold fs-3" href="#">Visla</a>
+
+          <!-- Toggle button for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#page">Pages</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#shop">Shop</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="demo home" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators text-white">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="class1"></div>
+        <div class="carousel-item active">
+          <img
+            src="https://as2.ftcdn.net/jpg/04/65/71/69/1000_F_465716913_N4CLR7etojguBe4M5bfGH6oNrnfJgrHn.jpg"
+            alt="Los Angeles"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <h3>Building Your Dreams</h3>
+            <p>We can build anything you want</p>
+            <button class="btn btn-warning">Our Project</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://thumbs.dreamstime.com/b/architect-plan-working-table-crane-building-construction-background-file-35192700.jpg"
+            alt="Chicago"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <h3>Building Your Dreams</h3>
+            <p>We can build anything you want</p>
+            <button class="btn btn-warning">Our Project</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+            alt="New York"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <h3>Building Your Dreams</h3>
+            <p>We can build anything you want</p>
+            <button class="btn btn-warning">Our Project</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon text-dark"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon text-dark"></span>
+      </button>
+    </div>
+
+    <div
+      class="container-fluid bg-warning d-flex justify-content-around align-items-center text-center text-white pt-3"
+    >
+      <div>
+        <h3 class="text-uppercase">Making dreams come to life</h3>
+        <p>Quality is what we persue, we know what we do</p>
+      </div>
+      <div><button class="btn btn-light">Get a Quote</button></div>
+    </div>
+
+    <div class="container pt-5" id="services">
+      <!-- //services -->
+      <h1 class="text-uppercase heading">Our Services</h1>
+
+      <ul class="nav services pt-5">
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fas fa-ruler-combined"></i></a
+          ><span> Design</span>
+        </li>
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fa-solid fa-hammer"></i></a
+          ><span>Electric</span>
+        </li>
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fas fa-truck"></i> </a
+          ><span>Transport</span>
+        </li>
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fas fa-faucet-drip"></i> </a>
+          <span>Water</span>
+        </li>
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fas fa-hard-hat"></i> </a
+          ><span>Building</span>
+        </li>
+        <li class="nav-item link">
+          <a class="nav-link" href="#"><i class="fas fa-building"></i> </a
+          ><span>Infrastructure</span>
+        </li>
+      </ul>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row py-5 d-flex justify-content-between align-items-center">
+        <div class="col-md-6">
+          <img
+            src="https://www.softedemy.com/wp-content/uploads/2022/07/Electrical-Optimized.jpg"
+            alt="..."
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-start">Electric Service</h2>
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatibus, quos, voluptates, voluptatibus, quos, voluptates,
+            voluptatibus, quos, voluptates, voluptatibus, quos, voluptates,
+            voluptatibus, quos, voluptates.
+          </p>
+          <button class="btn text-warning">Read More >></button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light" id="blog">
+      <div class="container">
+        <div class="row p-5 d-flex justify-content-between align-items-center">
+          <div class="col-md-6 col-lg-6">
+            <h2 class="text-uppercase text-start heading1 mb-3">
+              Why choose US
+            </h2>
+            <div class="props p-3">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="d-flex justify-content-between align-items-center choice"
+                  >
+                    <i class="fa-solid fa-handshake-simple"></i>
+
+                    <div class="p-3">
+                      <h4>Architectural Design</h4>
+                      <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, veritatis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="d-flex justify-content-between align-items-center choice"
+                  >
+                    <i class="fas fa-cogs"></i>
+
+                    <div class="p-3">
+                      <h4>Electrical System</h4>
+                      <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, veritatis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="d-flex justify-content-between align-items-center choice"
+                  >
+                    <i class="fas fa-gem"></i>
+
+                    <div class="p-3">
+                      <h4>Quality</h4>
+                      <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, veritatis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <img
+              src="./Screenshot 2025-04-28 161815.png"
+              alt="..."
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="project">
+      <nav>
+        <h1 class="text-uppercase heading">Our Projects</h1>
+
+        <ul class="nav pt-5 justify-content-center project-nav">
+          <li class="nav-item link">
+            <a class="nav-link" href="#">All projects</a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#">Office</a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#">HealthCare </a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#">WereHouse </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="row">
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://blog.architizer.com/wp-content/uploads/Heydar-ALiyev-Center-in-Baku_cropped.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtTzAa-iUayWTT8dnBfkdJICtEu9jr1ZJPA&s"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98yDHD8Z9_-87b3_Mbc2Ec5Teh3B6M3AATg&s"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg?cs=srgb&dl=pexels-yentl-jacobs-43020-157811.jpg&fm=jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://www.usatoday.com/gcdn/-mm-/7b36457556816fdf0123573b73eaf3af0e50bcf8/c=0-180-1279-902/local/-/media/2017/04/03/USATODAY/USATODAY/636268136824611611-houseofsweden003-web.jpg?width=700&height=396&fit=crop&format=pjpg&auto=webp"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://neuroject.com/wp-content/uploads/2023/07/101_Worlds_Best_Modern_Architecture_Buildings_Anwar_Gargash_Diplomatic_Academy_Neuroject_29.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uBxERAUj6I3jxNDudqNztqp2EOErbE4wKw&s"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-3 img-container px-0">
+          <div class="hover overlay text-center text-white pt-5">
+            <h3 class="text-uppercase">Project Name</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet</p>
+            <button class="btn text-warning">Read More >></button>
+          </div>
+          <img
+            src="https://schoolhouse-prod-images.dansk.com/8e765605c84fd2cf6c48c5130ae52582220acaf6-900x600.jpg?w=1920&q=75"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5" id="news">
+      <!-- //news -->
+      <h1 class="text-uppercase heading mb-5">Latest News</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sT4fdoY-YlWOtcEDPugiLOZS75N33x0sbQ&s"
+            alt="..."
+            class="news-img1"
+          />
+          <h4 class="display4">Future Proofing Hospital</h4>
+          <p class="text-secondary">
+            <i class="fa-solid fa-calendar-days"> </i>25/03/ 200 6 |
+            <i class="fa-solid fa-comments"></i> Comment
+          </p>
+          <p class="text-dark">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+            quisquam.
+          </p>
+          <button class="btn text-warning">Read More >></button>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://whitecollarrealty.com/admin/assets/residential_property/central-park-sky-villas/20220921160912_highlights_image_Central_Park_Sky_Villas_Master_Floor_Plan.jpg"
+                alt=""
+                class="news-img"
+              />
+            </div>
+            <div class="col-md-8">
+              <h4 class="display4">Central Villa Park</h4>
+              <p class="text-secondary">
+                <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
+                <i class="fa-solid fa-comments"></i> Comment
+              </p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+                quisquam.
+              </p>
+              <button class="btn text-warning">Read More >></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://st4.depositphotos.com/1006542/31513/i/450/depositphotos_315139338-stock-photo-male-builder-choosing-bricks-hardware.jpg"
+                alt=""
+                class="news-img"
+              />
+            </div>
+            <div class="col-md-8">
+              <h4 class="display4">Bike Parts Warehouse</h4>
+              <p class="text-secondary">
+                <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
+                <i class="fa-solid fa-comments"></i> Comment
+              </p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+                quisquam.
+              </p>
+              <button class="btn text-warning">Read More >></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://bloximages.chicago2.vip.townnews.com/qchron.com/content/tncms/assets/v3/editorial/7/79/77961d93-6e1a-52b2-a692-36c88890653c/654d0b0e02819.image.jpg"
+                alt=""
+                class="news-img"
+              />
+            </div>
+            <div class="col-md-8">
+              <h4 class="display4">Joy Hotel & Casino</h4>
+              <p class="text-secondary">
+                <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
+                <i class="fa-solid fa-comments"></i> Comment
+              </p>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+                quisquam.
+              </p>
+              <button class="btn text-warning">Read More >></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner-fluid project p-5" id="shop">
+      <div class="content text-start text-white">
+        <h1 class="text-uppercase">We build your dream project</h1>
+        <p class="text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatibus, quos, voluptates, voluptatibus, quos, voluptates,
+          voluptatibus, quos, voluptates, voluptatibus, quos, voluptates,
+          voluptatibus, quos, voluptates.
+        </p>
+        <button class="btn btn-warning">Get a Quote</button>
+      </div>
+    </div>
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-5">
+          <h2 class="text-uppercase text-start heading2 mb-3">Testimonials</h2>
+          <ul class="pagination m-3 justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0);"><</a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0);">></a>
+            </li>
+          </ul>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 card-main">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="https://www.shutterstock.com/image-photo/confident-construction-site-worker-portrait-600nw-2448610095.jpg"
+                    alt="Profile Image"
+                    class="img-fluid"
+                  />
+                  <div class="title">
+                    <h4>Name</h4>
+                    <p>Designation</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  saepe sit magni voluptatum inventore corrupti quia delectus
+                  quam provident velit maiores rerum temporibus, quasi alias et
+                  repudiandae, deleniti fugiat fuga.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 card-main">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    src="https://www.shutterstock.com/image-photo/confident-construction-site-worker-portrait-600nw-2448610095.jpg"
+                    alt="Profile Image"
+                    class="img-fluid"
+                  />
+                  <div class="title">
+                    <h4>Name</h4>
+                    <p>Designation</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  saepe sit magni voluptatum inventore corrupti quia delectus
+                  quam provident velit maiores rerum temporibus, quasi alias et
+                  repudiandae, deleniti fugiat fuga.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="partner">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-5">
+          <h2 class="text-uppercase text-start heading2 mb-3">Partner</h2>
+          <ul class="pagination m-3 justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0);"><</a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0);">></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav services1 pt-5">
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i>
+            </a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+          <li class="nav-item link">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-person-shelter"></i
+            ></a>
+          </li>
+        </ul>
+        <hr />
+      </div>
+    </div>
+    <footer class="footer text-light" id="contact">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Logo and About -->
+          <div class="col-md-6 col-lg-3">
+            <h2 class="text-uppercase text-warning mb-3">Visla</h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              saepe sit magni voluptatum inventore corrupti quia delectus quam
+              provident velit maiores rerum temporibus, quasi alias et
+              repudiandae, deleniti fugiat fuga.
+            </p>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="text-uppercase text-light mb-3">Navigation</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Working Hours -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="text-uppercase text-light mb-3">Working Hours</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#"
+                  >Monday - Friday</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#"
+                  >9:00 am - 5:00 pm</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Saturday</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#"
+                  >10:00 am - 2:00 pm</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Sunday</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 text-secondary" href="#">Closed</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subscribe Form -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="text-uppercase text-light mb-3">Subscribe</h5>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              saepe sit magni voluptatum inventore corrupti quia delectus quam
+              provident velit maiores rerum temporibus, quasi alias et
+              repudiandae, deleniti fugiat fuga.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+              />
+              <button class="btn btn-warning" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="container-fluid bg-dark text-light">
+      <div class="container text-center py-3">
+        <p>Copyright &copy; 2023 Visla. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

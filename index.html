@@ -53,7 +53,7 @@
           </ul>
 
           <!-- Social Icons -->
-          <ul class="navbar-nav flex-row">
+          <ul class="navbar-nav flex-row d-none d-md-flex">
             <li class="nav-item me-2">
               <a class="nav-link text-secondary p-0" href="#"
                 ><i class="fa-brands fa-twitter"></i
@@ -145,7 +145,7 @@
       </nav>
     </header>
 
-    <div id="demo home" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
       <!-- Indicators/dots -->
       <div class="carousel-indicators text-dark">
         <button
@@ -176,9 +176,9 @@
             style="width: 100%"
           />
           <div class="carousel-caption">
-            <h3>Building Your Dreams</h3>
+            <h3 class="text-uppercase">Building Your Dreams</h3>
             <p>We can build anything you want</p>
-            <button class="btn btn-warning">Our Project</button>
+            <button class="btn btn-btn btn-warning">Our Project</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -191,7 +191,7 @@
           <div class="carousel-caption">
             <h3>Building Your Dreams</h3>
             <p>We can build anything you want</p>
-            <button class="btn btn-warning">Our Project</button>
+            <button class="btn btn-btn btn-warning">Our Project</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -204,7 +204,7 @@
           <div class="carousel-caption">
             <h3>Building Your Dreams</h3>
             <p>We can build anything you want</p>
-            <button class="btn btn-warning">Our Project</button>
+            <button class="btn btn-btn btn-warning">Our Project</button>
           </div>
         </div>
       </div>
@@ -484,18 +484,18 @@
       </div>
     </div>
     <div class="container pt-5" id="news">
-      <!-- //news -->
       <h1 class="text-uppercase heading mb-5">Latest News</h1>
       <div class="row">
-        <div class="col-md-6">
+        <!-- Main large news block -->
+        <div class="col-12 mb-4">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sT4fdoY-YlWOtcEDPugiLOZS75N33x0sbQ&s"
             alt="..."
-            class="news-img1"
+            class="news-img1 w-100"
           />
           <h4 class="display4">Future Proofing Hospital</h4>
           <p class="text-secondary">
-            <i class="fa-solid fa-calendar-days"> </i>25/03/ 200 6 |
+            <i class="fa-solid fa-calendar-days"> </i>25/03/ 2006 |
             <i class="fa-solid fa-comments"></i> Comment
           </p>
           <p class="text-dark">
@@ -504,16 +504,18 @@
           </p>
           <button class="btn text-warning">Read More >></button>
         </div>
-        <div class="col-md-6">
+
+        <!-- Other smaller news cards -->
+        <div class="col-12 mb-3">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
               <img
                 src="https://whitecollarrealty.com/admin/assets/residential_property/central-park-sky-villas/20220921160912_highlights_image_Central_Park_Sky_Villas_Master_Floor_Plan.jpg"
                 alt=""
-                class="news-img"
+                class="news-img w-100"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-12 col-md-8">
               <h4 class="display4">Central Villa Park</h4>
               <p class="text-secondary">
                 <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
@@ -526,15 +528,18 @@
               <button class="btn text-warning">Read More >></button>
             </div>
           </div>
+        </div>
+
+        <div class="col-12 mb-3">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
               <img
                 src="https://st4.depositphotos.com/1006542/31513/i/450/depositphotos_315139338-stock-photo-male-builder-choosing-bricks-hardware.jpg"
                 alt=""
-                class="news-img"
+                class="news-img w-100"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-12 col-md-8">
               <h4 class="display4">Bike Parts Warehouse</h4>
               <p class="text-secondary">
                 <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
@@ -547,15 +552,18 @@
               <button class="btn text-warning">Read More >></button>
             </div>
           </div>
+        </div>
+
+        <div class="col-12 mb-3">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-md-4 mb-2 mb-md-0">
               <img
                 src="https://bloximages.chicago2.vip.townnews.com/qchron.com/content/tncms/assets/v3/editorial/7/79/77961d93-6e1a-52b2-a692-36c88890653c/654d0b0e02819.image.jpg"
                 alt=""
-                class="news-img"
+                class="news-img w-100"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-12 col-md-8">
               <h4 class="display4">Joy Hotel & Casino</h4>
               <p class="text-secondary">
                 <i class="fa-solid fa-calendar-days"></i> 25/03/2006 |
@@ -571,6 +579,7 @@
         </div>
       </div>
     </div>
+
     <div class="conteiner-fluid project p-5" id="shop">
       <div
         class="content text-start text-white d-flex flex-column justify-content-center align-items-start"
@@ -582,7 +591,7 @@
           voluptatibus, quos, voluptates, voluptatibus, quos, voluptates,
           voluptatibus, quos, voluptates.
         </p>
-        <button class="btn btn-warning">Get a Quote</button>
+        <button class="btn btn-btn btn-warning">Get a Quote</button>
       </div>
     </div>
     <div class="container-fluid bg-light">
@@ -734,7 +743,7 @@
           <div class="col-md-6 col-lg-3">
             <h5 class="text-uppercase text-light mb-3 ml-3">Navigation</h5>
             <div class="row">
-              <div class="col-md-6 col-lg-6">
+              <div class="col-md-6 col-lg-6 col-sm-6">
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <a class="nav-link p-0 text-secondary" href="#">Home</a>
@@ -753,7 +762,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-6 col-lg-6">
+              <div class="col-md-6 col-lg-6 col-sm-6">
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <a class="nav-link p-0 text-secondary" href="#">Contact</a>

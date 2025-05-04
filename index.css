@@ -13,6 +13,15 @@ html {
   color: black;
   transition: color 0.3s ease;
 }
+.navi .nav-link {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navi .nav-link:hover {
+  color: #f5a623 !important; /* Change to white or your brand color */
+  /* Optional underline */
+}
+
 .navbar-nav .nav-link:hover {
   color: #f0ad4e; /* Golden hover effect */
 }
@@ -98,7 +107,7 @@ html {
   transition: c olor 0.3s ease;
 }
 .services1 > .nav-item {
-  border: 1px solid grey;
+  border: 1px solid rgb(218, 217, 217);
   border-radius: 3px;
   padding: 40px 50px;
   margin: 0;
@@ -249,10 +258,11 @@ html {
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  max-width: 600px;
+  max-width: 650px;
   height: 500px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  margin-left: 10%;
 }
 .project {
   background-image: url("https://www.shutterstock.com/image-photo/portrait-mature-happy-handyman-presenting-600nw-2312717701.jpg");
@@ -287,14 +297,19 @@ html {
 .card {
   padding: 20px;
   background-color: #fff;
-  border-radius: 10px;
+
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --bs-card-border-color: transparent !important; /* or any custom color */
+  border-color: transparent !important;
+  -bs-card-border-radius: var(--bs-border-radius) !important;
+  border-radius: 0px !important;
 }
 .card-header {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
+  background-color: #fff !important;
 }
 .card-header img {
   width: 70px;
@@ -342,4 +357,94 @@ html {
   font-size: 16px !important;
   font-weight: bold !important;
   text-transform: uppercase;
+}
+.btn-btn-1 {
+  margin: 10px 0 !important;
+  padding: 10px 25px !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+}
+.carousel-caption {
+  margin-bottom: 10% !important;
+}
+.email-subscribe-form {
+  width: 100%;
+}
+
+.email-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  overflow: hidden;
+}
+
+.email-input {
+  flex: 1;
+  background: rgb(51, 51, 51) !important;
+  border: none !important;
+  color: #e7e3e3 !important;
+  padding: 10px 12px;
+  font-style: italic;
+}
+
+.email-input::placeholder {
+  color: #585858 !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.email-submit-btn {
+  background: transparent;
+  border: none;
+  color: #f1c40f; /* Yellow icon */
+  font-size: 18px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.email-submit-btn:hover {
+  color: #ffc107;
+}
+
+.custom-pagination .page-link {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 8px;
+  border: none;
+  border-radius: 0% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
+}
+
+/* Left button - yellow */
+.custom-pagination .prev {
+  background-color: #ffbd00;
+}
+
+.custom-pagination .prev:hover {
+  background-color: #e6aa00;
+}
+
+/* Right button - gray */
+.custom-pagination .next {
+  background-color: #d3d3d3;
+  color: #444;
+}
+
+.custom-pagination .next:hover {
+  background-color: #bbbbbb;
 }

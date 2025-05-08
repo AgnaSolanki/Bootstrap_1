@@ -1,7 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
-
+.color {
+  color: #f5a623 !important;
+  font-weight: 400;
+  padding-top: 3px;
+}
 .contect {
   font-size: 0.8rem;
 }
@@ -36,7 +40,7 @@ html {
 }
 .carousel-item > img {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
 }
 
 .carousel-inner {
@@ -158,7 +162,7 @@ html {
 .heading2 {
   align-items: start;
   position: relative;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   color: #222;
   text-align: start;
@@ -167,13 +171,13 @@ html {
 .heading1::after {
   content: "";
   position: absolute;
-  left: 8%;
+  left: 7%;
   bottom: -10px;
   transform: translateX(-50%);
-  width: 70px;
+  width: 60px;
   height: 3px;
   background-color: #f5a623;
-  border-radius: 2px; /* optional: make line ends a little rounded */
+  border-radius: 2px;
 }
 
 .heading2::after {
@@ -359,21 +363,23 @@ html {
   text-transform: uppercase;
 }
 .btn-btn-1 {
-  margin: 10px 0 !important;
   padding: 10px 25px !important;
   border: none !important;
   cursor: pointer !important;
   border-radius: 0px !important;
   font-size: 16px !important;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .carousel-caption {
-  margin-bottom: 10% !important;
+  margin-bottom: 7% !important;
 }
 .email-subscribe-form {
   width: 100%;
 }
-
+.para {
+  font-size: 15px;
+}
 .email-input-wrapper {
   position: relative;
   display: flex;
@@ -432,19 +438,43 @@ html {
 
 /* Left button - yellow */
 .custom-pagination .prev {
-  background-color: #ffbd00;
+  background-color: #bbbbbb;
 }
 
-.custom-pagination .prev:hover {
-  background-color: #e6aa00;
+.custom-pagination .prev:hover .prev:focus {
+  background-color: #f5a623;
 }
 
 /* Right button - gray */
 .custom-pagination .next {
-  background-color: #d3d3d3;
-  color: #444;
+  background-color: #bbbbbb;
+  color: #ffffff;
 }
 
-.custom-pagination .next:hover {
-  background-color: #bbbbbb;
+.custom-pagination .next:hover,
+.next:focus {
+  background-color: #f5a623;
+}
+.para1 {
+  color: rgb(61, 60, 60);
+  font-weight: 500;
+}
+.bg-- {
+  background-color: black;
+}
+.para2 {
+  font-size: 13px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important; /* Change to your desired color */
+  opacity: 1 !important;
+  margin: 0 8px !important;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #ffc107 !important; /* Active dot color, e.g., Bootstrap warning */
 }
